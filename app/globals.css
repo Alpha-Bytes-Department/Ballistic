@@ -1,26 +1,43 @@
+/* imported files and links  */
 @import "tailwindcss";
+@plugin "daisyui";
 
+@font-face {
+  font-family: 'klear';
+  src: url("../public/fronts/Klear\ -\ Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-nPrimary: #e4f3e5;
+  --color-nButtonPrimary: #3d8c40;
+
+}
+
+
+/* declar variable  */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* media query */
+/* @media () {
+  
+} */
 
+
+/* implement style  */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  max-width: 2000px;
+  font-family: 'klear', Arial, Helvetica, sans-serif;
+}
+
+.bodyCantainer {
+  margin: 30px 30px 0px 30px;
 }

@@ -4,6 +4,8 @@ import logo from "@/public/logo/logo.png";
 import Image from "next/image";
 import NavPath from "./NavPath";
 import SecondNav from "./SecondNav";
+import Login from "../Buttons/Login";
+import TryCalculator from "../Buttons/TryCalculator";
 
 const Navbar = () => {
 
@@ -47,12 +49,9 @@ const Navbar = () => {
             <NavPath/>
           </ul>
         </div>
-        <div className="navbar-end">
-          <div className="avatar">
-            <div className="ring-primary ring-offset-base-100 w-8 rounded-full ring-2 ring-offset-2">
-              <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
-            </div>
-          </div>
+        <div className="navbar-end gap-3">
+          <TryCalculator/>
+          <Login />
         </div>
       </div>
       <SecondNav/>

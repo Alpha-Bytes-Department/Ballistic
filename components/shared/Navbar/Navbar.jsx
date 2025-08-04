@@ -12,11 +12,11 @@ const Navbar = () => {
     
 
   return (
-    <nav className="flex flex-col gap-10">
+    <nav className="flex flex-col gap-5 lg:gap-10">
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden -ms-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -50,11 +50,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-3">
-          <TryCalculator/>
-          <Login />
+          <TryCalculator design="text-sm lg:text-base"/>
+          <Login design="text-sm lg:text-base"/>
         </div>
       </div>
-      <SecondNav/>
+      <SecondNav />
     </nav>
   );
 };

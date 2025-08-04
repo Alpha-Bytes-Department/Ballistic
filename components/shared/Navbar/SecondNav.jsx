@@ -2,26 +2,26 @@ import React from "react";
 
 const SecondNav = () => {
   return (
-    <div className="flex justify-between">
-      <div className="space-x-5">
-        <button className="btn bg-transparent rounded-[8px] border-[1px] border-black">
+    <div className="flex justify-between flex-col gap-3 md:gap-0 md:flex-row mx-3 ">
+      <div className="space-x-2.5 lg:space-x-5">
+        <button className="btn bg-transparent btn-md px-2 lg:px-5 lg:btn-md lg:text-base rounded-[8px] border-[1px] border-black">
           Bullet
         </button>
-        <button className="btn bg-transparent rounded-[8px] border-[1px] border-black">
+        <button className="btn bg-transparent btn-md px-2 lg:px-5 lg:btn-md lg:text-base rounded-[8px] border-[1px] border-black">
           Gun
         </button>
-        <button className="btn bg-transparent rounded-[8px] border-[1px] border-black">
+        <button className="btn bg-transparent btn-md px-2 lg:px-5 lg:btn-md lg:text-base rounded-[8px] border-[1px] border-black">
           New
         </button>
-        <button className="btn bg-transparent rounded-[8px] border-[1px] border-black">
+        <button className="btn bg-transparent btn-md px-2 lg:px-5 lg:btn-md lg:text-base rounded-[8px] border-[1px] border-black">
           Scope
         </button>
-        <button className="btn bg-transparent rounded-[8px] border-[1px] border-black">
+        <button className="btn bg-transparent btn-md px-2 lg:px-5 lg:btn-md lg:text-base rounded-[8px] border-[1px] border-black">
           Calculator
         </button>
       </div>
       <div>
-        <label className="input border-black focus-within:border-0  lg:w-xl rounded-[8px]">
+        <label className="input border-black focus-within:border-0 w-full lg:w-xl rounded-[8px]">
           <input type="search"  placeholder="Search" className="text-black" />
           <svg
             className="h-[1em] "

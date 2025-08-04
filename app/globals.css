@@ -1,11 +1,45 @@
 /* imported files and links  */
 @import "tailwindcss";
+
+/* import front  */
+@font-face {
+  font-family: 'klear regular';
+  src: url("../public/fronts/Klear\ -\ Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'klear light';
+  src: url("../public/fronts/Klear\ -\ Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+/* custom theme  */
+@theme {
+  --font-klear-regular: "klear regular";
+  --font-klear-light: "klear light";
+}
+
+
+
+
+/* daisy ui plagin  */
 @plugin "daisyui";
 @plugin "daisyui/theme" {
   name: "mytheme";
-  default: true; /* set as default */
-  prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
-  color-scheme: light; /* color of browser-provided UI */
+  default: true;
+  /* set as default */
+  prefersdark: false;
+  /* set as default dark mode (prefers-color-scheme:dark) */
+  color-scheme: light;
+  /* color of browser-provided UI */
   --color-base-content: oklch(20% 0.05 240);
   --color-primary: #e4f3e5;
   --color-primary-content: oklch(98% 0.01 240);
@@ -42,19 +76,6 @@
 }
 
 
-@font-face {
-  font-family: 'klear';
-  src: url("../public/fronts/Klear\ -\ Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* @theme {
-  --color-nPrimary: #e4f3e5;
-  --color-nButtonPrimary: #3d8c40;
-} */
-
 
 
 /* declar variable  */
@@ -70,14 +91,30 @@
 } */
 
 
+p {
+  font-family: 'klear light';
+}
+
+
 /* implement style  */
 body {
   background: var(--background);
   color: var(--foreground);
   max-width: 2000px;
-  font-family: 'klear', Arial, Helvetica, sans-serif;
+  font-family: 'klear regular', Arial, Helvetica, sans-serif;
 }
 
-.bodyCantainer {
-  margin: 30px 30px 0px 30px;
+
+
+
+@media (min-width: 768px) {
+  .bodyCantainer {
+    margin: 10px 10px 0px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bodyCantainer {
+    margin: 30px 30px 0px 30px;
+  }
 }

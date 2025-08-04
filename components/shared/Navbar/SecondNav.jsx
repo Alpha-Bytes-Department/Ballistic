@@ -21,7 +21,7 @@ const SecondNav = () => {
         </button>
       </div>
       <div>
-        <label className="input border-black focus-within:border-0 w-2xl rounded-[8px]">
+        <label className="input border-black focus-within:border-0  lg:w-2xl rounded-[8px]">
           <input type="search"  placeholder="Search" className="text-black" />
           <svg
             className="h-[1em] "

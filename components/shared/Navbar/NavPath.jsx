@@ -7,7 +7,7 @@ import React from "react";
 
 let navData = [
   {
-    path: "/",
+    path: "/home",
     name: "Home",
   },
   {

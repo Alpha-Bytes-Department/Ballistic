@@ -2,7 +2,7 @@ import React from "react";
 
 const SecondNav = () => {
   return (
-    <div className="flex justify-between flex-col gap-3 md:gap-0 md:flex-row mx-3 ">
+    <div className="flex justify-between flex-col gap-3 md:gap-0 md:flex-row mx-3">
       <div className="space-x-2.5 lg:space-x-5">
         <button className="btn bg-transparent btn-md px-2 lg:px-5 lg:btn-md lg:text-base rounded-[8px] border-[1px] border-black">
           Bullet

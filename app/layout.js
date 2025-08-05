@@ -23,9 +23,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="">
         <div className="bodyCantainer">
-          <Navbar />
+          <Navbar/>
+          {children}
         </div>
-        {children}
         <Footer />
       </body>
     </html>

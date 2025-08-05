@@ -1,9 +1,10 @@
 import Banner from "@/components/LandingPage/Banner";
-import BallisticCalculator from "@/components/shared/BallisticCalculator/BallisticCalculator";
+import BallisticCalculator from "@/components/Calculator/BallisticCalculator/BallisticCalculator";
 import Login from "@/components/shared/Buttons/Login";
 import Signup from "@/components/shared/Buttons/Signup";
 import bullet from "@/public/images/bullet.png"
 import Image from "next/image";
+import Features from "@/components/Features/Features";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
             <Signup/>
         </div>
       </div>
+      <Features/>
     </div>
   );
 }

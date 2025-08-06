@@ -1,9 +1,9 @@
 import React from "react";
 import Calculate from "../../shared/Buttons/Calculate";
 
-const BallisticCalculator = () => {
+const BallisticCalculator = ({design}) => {
   return (
-    <div className="w-9/12">
+    <div className={`${design}`}>
       <h1 className="text-2xl font-klear-bold">BALLISTIC CALCULATOR</h1>
       <p>
         Easily calculate bullet trajectories for any rifle or handgun load — and

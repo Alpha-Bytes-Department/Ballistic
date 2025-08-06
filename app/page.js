@@ -7,11 +7,13 @@ import Image from "next/image";
 import Features from "@/components/Features/Features";
 
 export default function Home() {
+
+  
   return (
     <div>
       <Banner/>
       <div className="flex gap-20 my-10">
-        <BallisticCalculator/>
+        <BallisticCalculator design="w-9/12"/>
         <div className="flex flex-col gap-5 w-3/12">
         <Image alt="bullet" src={bullet} width={170} height={50} className="mx-auto"/>
           <div className="text-xl bg-primary py-3 text-center">Please Login</div>

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import logo from "@/public/logo/logo.png";
 import Image from "next/image";
 import NavPath from "./NavPath";
 import SecondNav from "./SecondNav";
@@ -41,7 +40,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link href="/" className=" hidden lg:block">
-            <Image alt="logo" width={200} height={50} src={logo} />
+            <Image alt="logo" width={200} height={50} src="/logo/logo.png" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

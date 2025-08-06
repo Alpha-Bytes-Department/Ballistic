@@ -1,19 +1,15 @@
 import React from "react";
-import bullet from "@/public/images/Bullet.png";
 import Image from "next/image";
-import feature1 from "@/public/images/feature1.jpg";
-import feature2 from "@/public/images/feature2.jpg";
-import feature3 from "@/public/images/feature3.jpg";
 
 const Features = () => {
   return (
     <div className="space-y-5">
       <div className="flex flex-col justify-center items-center">
         <div className="flex gap-3 items-center">
-          <Image src={bullet} width={170} height={50} alt="bullet" />
+          <Image src="/images/Bullet.png" width={170} height={50} alt="bullet" />
           <h1 className="text-2xl font-bold">Feature</h1>
           <Image
-            src={bullet}
+            src="/images/Bullet.png"
             width={170}
             height={50}
             alt="bullet"
@@ -26,7 +22,7 @@ const Features = () => {
         <div className="w-[424px] h-[424px] relative flex flex-col items-center">
           <div className="relative w-full h-[400px]">
             <Image
-              src={feature1}
+              src="/images/feature1.jpg"
               alt="feature1"
               fill
               className="object-cover rounded-lg"
@@ -49,7 +45,7 @@ const Features = () => {
         <div className="w-[424px] h-[424px] relative flex flex-col items-center">
           <div className="relative w-full h-[400px]">
             <Image
-              src={feature2}
+              src="/images/feature2.jpg"
               alt="feature2"
               fill
               className="object-cover rounded-lg"
@@ -71,7 +67,7 @@ const Features = () => {
         <div className="w-[424px] h-[424px] relative flex flex-col items-center">
           <div className="relative w-full h-[400px]">
             <Image
-              src={feature3}
+              src="/images/feature3.jpg"
               alt="feature3"
               fill
               className="object-cover rounded-lg"

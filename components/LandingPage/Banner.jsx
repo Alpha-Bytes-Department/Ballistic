@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import helicuptor from "@/public/images/HeliCupter.png";
-import bullet from "@/public/images/Bullet.png";
 
 const Banner = () => {
   return (
@@ -19,7 +17,7 @@ const Banner = () => {
             height={35}
             alt="bullet"
             className="-rotate-90 absolute -left-12 top-10"
-            src={bullet}
+            src="/images/Bullet.png"
           />
           <div className="ms-10 space-y-5">
             <h2 className="text-5xl">Real-Time Accuracy</h2>
@@ -30,7 +28,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <Image className="" src={helicuptor} alt="helicapter" />
+      <Image className="" src="/images/HeliCupter.png" width={808} height={463} alt="helicapter" />
 
       <h1 className="text-[#E539350D] font-playfair-display-regular absolute right-0 -bottom-36 text-[20rem] tracking-tight">
         Ballestic

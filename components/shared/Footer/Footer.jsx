@@ -1,10 +1,5 @@
 import React from "react";
-import logo from '@/public/logo/logo.png'
 import Image from "next/image";
-import x from '@/public/icons/tweeter.png'
-import facebook from '@/public/icons/facebook.png'
-import linkedin from '@/public/icons/linkedin.png'
-import insta from '@/public/icons/insta.png'
 import Newslatter from "./Newslatter";
 
 const Footer = () => {
@@ -12,15 +7,15 @@ const Footer = () => {
     <footer className="bg-primary">
       <div className="footer sm:footer-horizontal  text-base-content p-10">
         <nav className="space-y-3">
-          <Image width={200} height={50} alt="logo" src={logo} />
+          <Image width={200} height={50} alt="logo" src='/logo/logo.png' />
           <div className="max-w-80">
             The purpose of a FAQ is generally to provide information on frequent questions or concerns.
           </div>
           <div className="flex gap-2">
-            <Image width={30} height={30} src={x} alt="tweeter"/>
-            <Image width={30} height={30} src={facebook} alt="facebook"/>
-            <Image width={30} height={30} src={insta} alt="insta"/>
-            <Image width={30} height={30} src={linkedin} alt="linkdin"/>
+            <Image width={30} height={30} src='/icons/tweeter.png' alt="tweeter"/>
+            <Image width={30} height={30} src='/icons/facebook.png' alt="facebook"/>
+            <Image width={30} height={30} src='/icons/insta.png' alt="insta"/>
+            <Image width={30} height={30} src='/icons/linkedin.png' alt="linkdin"/>
           </div>
         </nav>
         <nav className="space-y-3">

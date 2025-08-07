@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="flex items-center bg-primary my-10 py-10 px-10 rounded relative overflow-hidden">
+    <div className="flex items-center bg-[#e4f3e5] my-10 py-10 px-10 rounded relative overflow-hidden">
       <div className="space-y-5">
         <h1 className="text-5xl">
           Precision{" "}
@@ -21,7 +21,7 @@ const Banner = () => {
           />
           <div className="ms-10 space-y-5">
             <h2 className="text-5xl">Real-Time Accuracy</h2>
-            <p className="text-secondary">
+            <p className="text-[#666666]">
               Get accurate drop charts based on your weapon, ammo, and current
               environment — right in your browser.
             </p>

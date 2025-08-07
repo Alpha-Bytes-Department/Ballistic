@@ -4,7 +4,7 @@ import Newslatter from "./Newslatter";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary">
+    <footer className="bg-[#e4f3e5]">
       <div className="footer sm:footer-horizontal  text-base-content p-10">
         <nav className="space-y-3">
           <Image width={200} height={50} alt="logo" src='/logo/logo.png' />

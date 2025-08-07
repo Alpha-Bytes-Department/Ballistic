@@ -23,20 +23,20 @@ const contactUs = () => {
                     <div>
                         <textarea className='border border-gray-300 focus:outline-0 p-3 rounded w-full' name="message" id="message"/>
                     </div>
-                    <div><button type='submit' className={`btn bg-success text-white`}>Send <IoArrowForwardCircleOutline className='text-xl'/></button></div>
+                    <div><button type='submit' className={`btn bg-[#3d8c40] text-white`}>Send <IoArrowForwardCircleOutline className='text-xl'/></button></div>
                 </form>
             </div>
             <div className='flex flex-col gap-5'>
                 <h1 className='text-3xl'>Let's talk with us</h1>
                 <h3>Questions, comments, or suggestions? Simply fill in the form and we’ll be in touch shortly.</h3>
                 <div>
-                    <h3 className='flex gap-2'><CiLocationOn className='text-success text-2xl font-klear-bold' /> 1055 Arthur ave Elk Groot, 67. New Palmas South Carolina.</h3>
+                    <h3 className='flex gap-2'><CiLocationOn className='text-[#3d8c40] text-2xl font-klear-bold' /> 1055 Arthur ave Elk Groot, 67. New Palmas South Carolina.</h3>
                 </div>
                 <div>
-                    <h3 className='flex gap-2'><MdWifiCalling3  className='text-success text-2xl font-klear-bold' /> +1 546 5415 1651</h3>
+                    <h3 className='flex gap-2'><MdWifiCalling3  className='text-[#3d8c40] text-2xl font-klear-bold' /> +1 546 5415 1651</h3>
                 </div>
                 <div>
-                    <h3 className='flex gap-2'><IoMailOutline   className='text-success text-2xl font-klear-bold' /> abcd@gmail.com</h3>
+                    <h3 className='flex gap-2'><IoMailOutline   className='text-[#3d8c40] text-2xl font-klear-bold' /> abcd@gmail.com</h3>
                 </div>
             </div>
         </div>

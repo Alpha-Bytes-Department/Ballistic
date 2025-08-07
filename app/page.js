@@ -15,7 +15,7 @@ export default function Home() {
         <BallisticCalculator design="w-9/12"/>
         <div className="flex flex-col gap-5 w-3/12">
         <Image alt="bullet" src="/images/bullet.png" width={170} height={55} className="mx-auto"/>
-          <div className="text-xl bg-primary py-3 text-center">Please Login</div>
+          <div className="text-xl bg-[#e4f3e5] py-3 text-center">Please Login</div>
             <p>Register to save your loads for viewing at a later time.</p>
             <Login/>
             <Signup/>

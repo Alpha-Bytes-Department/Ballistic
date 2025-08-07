@@ -14,7 +14,7 @@ export default function Home() {
       <div className="flex gap-20 my-10">
         <BallisticCalculator design="w-9/12"/>
         <div className="flex flex-col gap-5 w-3/12">
-        <Image alt="bullet" src="/images/bullet.png" width={170} height={50} className="mx-auto"/>
+        <Image alt="bullet" src="/images/bullet.png" width={170} height={55} className="mx-auto"/>
           <div className="text-xl bg-primary py-3 text-center">Please Login</div>
             <p>Register to save your loads for viewing at a later time.</p>
             <Login/>

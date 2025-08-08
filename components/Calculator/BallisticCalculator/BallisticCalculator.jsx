@@ -84,7 +84,7 @@ const BallisticCalculator = ({design}) => {
               <span>fps</span>
             </div>
           </label>
-          <label className="flex flex-col mx-auto text-center" htmlFor="coefficient">
+          <label className="flex flex-col 2xl:mx-auto text-center" htmlFor="coefficient">
             <h1 className="font-semibold">Ballistic Coefficient</h1>
             <div className="flex border gap-3 rounded p-2">
               <input
@@ -111,7 +111,7 @@ const BallisticCalculator = ({design}) => {
           </select>
         </div>
         <div className="text-xl bg-[#e4f3e5] py-3">Gun Inputs</div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 ">
           <div className="flex flex-col">
             <label htmlFor="load" className="text-left font-semibold">
               Rifle Type
@@ -126,7 +126,7 @@ const BallisticCalculator = ({design}) => {
               <option value="">Select 5</option>
             </select>
           </div>
-          <div className="flex gap-3 text-left">
+          <div className="flex gap-3 flex-wrap text-left">
             <label className="flex flex-col" htmlFor="calibar">
               <h1 className="font-semibold">Barrel Length</h1>
               <div className="flex border gap-3 rounded p-2">
@@ -234,7 +234,7 @@ const BallisticCalculator = ({design}) => {
               <span>pa</span>
             </div>
           </label>
-          <label className="flex flex-col text-center mx-auto" htmlFor="coefficient">
+          <label className="flex flex-col text-center 2xl:mx-auto" htmlFor="coefficient">
             <h1 className="font-semibold">Wind Speed</h1>
             <div className="flex border gap-3 rounded p-2">
               <input

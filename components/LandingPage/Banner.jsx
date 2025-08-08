@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="flex items-center bg-[#e4f3e5] my-10 py-10 px-10 rounded relative overflow-hidden">
+    <div className="flex items-center flex-col lg:flex-row bg-[#e4f3e5] my-10 py-10 px-10 rounded relative overflow-hidden">
       <div className="space-y-5">
         <h1 className="text-5xl">
           Precision{" "}
@@ -29,7 +29,6 @@ const Banner = () => {
         </div>
       </div>
       <Image className="" src="/images/HeliCupter.png" width={808} height={463} alt="helicapter" />
-
       <h1 className="text-[#E539350D] font-playfair-display-regular absolute right-0 -bottom-36 text-[20rem] tracking-tight">
         Ballestic
       </h1>

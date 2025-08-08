@@ -16,7 +16,7 @@ const Newslatter = () => {
             placeholder="username@site.com"
             className="input input-bordered join-item focus-within:border-0 border-0 focus:outline-0"
           />
-          <button className="btn btn-[#3d8c40] ">Subscribe</button>
+          <button className="btn bg-[#3d8c40] text-white">Subscribe</button>
         </div>
       </fieldset>
     </form>

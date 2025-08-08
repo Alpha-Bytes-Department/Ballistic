@@ -7,7 +7,7 @@ import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
 const contactUs = () => {
     return (
-        <div className='flex justify-around items-center my-24 mx-auto'>
+        <div className='flex flex-wrap justify-around gap-10 items-center my-24 mx-auto'>
             <div>
                 <h1 className='text-7xl'>Contact Us</h1>
                 <form action="submin" className='flex flex-col gap-3'>

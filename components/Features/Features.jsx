@@ -18,7 +18,7 @@ const Features = () => {
         </div>
         <h1>Treating all skin co</h1>
       </div>
-      <div className="grid grid-cols-3 gap-20 w-max mx-auto">
+      <div className="flex justify-center items-center flex-wrap gap-20 mx-auto">
         <div className="w-[424px] h-[424px] relative flex flex-col items-center">
           <div className="relative w-full h-[400px]">
             <Image

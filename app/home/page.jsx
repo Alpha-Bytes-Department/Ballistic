@@ -8,7 +8,7 @@ const page = () => {
         <div>
             <Banner/>
             <BallisticCalculator design="my-10"/>
-            <Features/>
+            <Features />
         </div>
     );
 };

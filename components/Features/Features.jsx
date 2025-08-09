@@ -1,20 +1,29 @@
 import React from "react";
 import Image from "next/image";
 
-const Features = () => {
+const Features = ({design = ""}) => {
   return (
-    <div className="space-y-5">
+    <div className={`space-y-5 ${design}`}>
       <div className="flex flex-col justify-center items-center">
         <div className="flex gap-3 items-center">
-          <Image src="/images/Bullet.png" width={170} height={50} alt="bullet" />
+          <div>
+            <Image
+              src="/images/Bullet.png"
+              width={170}
+              height={50}
+              alt="bullet"
+            />
+          </div>
           <h1 className="text-2xl font-bold">Feature</h1>
-          <Image
-            src="/images/Bullet.png"
-            width={170}
-            height={50}
-            alt="bullet"
-            className="rotate-180"
-          />
+          <div>
+            <Image
+              src="/images/Bullet.png"
+              width={170}
+              height={50}
+              alt="bullet"
+              className="rotate-180"
+            />
+          </div>
         </div>
         <h1>Treating all skin co</h1>
       </div>
@@ -63,7 +72,6 @@ const Features = () => {
             </p>
           </div>
         </div>
-
         <div className="w-[424px] h-[424px] relative flex flex-col items-center">
           <div className="relative w-full h-[400px]">
             <Image

@@ -44,6 +44,7 @@
 
 /* daisy ui plagin  */
 @plugin "daisyui";
+
 @plugin "daisyui/theme" {
   name: "mytheme";
   default: true;
@@ -113,7 +114,8 @@ body {
   font-family: 'klear regular', Arial, Helvetica, sans-serif;
 }
 
-*p, *select{
+*p,
+*select {
   color: #666666
 }
 
@@ -123,6 +125,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
 
 
 @media (min-width: 768px) {

@@ -4,19 +4,19 @@ const SecondNav = () => {
   return (
     <div className="flex justify-between flex-col gap-3 md:gap-0 md:flex-row mx-3">
       <div className="space-x-2.5 lg:space-x-5">
-        <button className="btn bg-transparent btn-md px-2 lg:px-5 rounded-[8px] border-[1px] border-black">
+        <button className="btn bg-transparent btn-md px-2 lg:px-5 rounded-[8px] border-[1px] border-black text-black">
           Bullet
         </button>
-        <button className="btn bg-transparent btn-md px-2 lg:px-5 rounded-[8px] border-[1px] border-black">
+        <button className="btn bg-transparent btn-md px-2 lg:px-5 rounded-[8px] border-[1px] border-black text-black">
           Gun
         </button>
-        <button className="btn bg-transparent btn-md px-2 lg:px-5 rounded-[8px] border-[1px] border-black">
+        <button className="btn bg-transparent btn-md px-2 lg:px-5 rounded-[8px] border-[1px] border-black text-black">
           New
         </button>
-        <button className="btn bg-transparent btn-md px-2 lg:px-5 rounded-[8px] border-[1px] border-black">
+        <button className="btn bg-transparent btn-md px-2 lg:px-5 rounded-[8px] border-[1px] border-black text-black">
           Scope
         </button>
-        <button className="btn bg-transparent btn-md px-2 lg:px-5 rounded-[8px] border-[1px] border-black">
+        <button className="btn bg-transparent btn-md px-2 lg:px-5 rounded-[8px] border-[1px] border-black text-black">
           Calculator
         </button>
       </div>

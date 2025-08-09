@@ -113,8 +113,8 @@ body {
   font-family: 'klear regular', Arial, Helvetica, sans-serif;
 }
 
-p, select{
-  color: var(--color-secondary);
+*p, *select{
+  color: #666666
 }
 
 .playfair-display-regular {

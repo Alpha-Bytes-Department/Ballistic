@@ -1,7 +1,7 @@
 import React from "react";
 import Calculate from "../../shared/Buttons/Calculate";
 
-const BallisticCalculator = ({design}) => {
+const BallisticCalculator = ({ design }) => {
   return (
     <div className={`${design}`}>
       <h1 className="text-2xl font-klear-bold">BALLISTIC CALCULATOR</h1>
@@ -21,7 +21,7 @@ const BallisticCalculator = ({design}) => {
           <option value="">Select 5</option>
         </select>
         <div className="text-xl bg-[#e4f3e5] py-3">Ammunition Inputs</div>
-        <div className="flex flex-col ">
+        <div className="flex flex-col">
           <label htmlFor="load" className="text-left font-semibold">
             Load type
           </label>
@@ -36,63 +36,67 @@ const BallisticCalculator = ({design}) => {
           </select>
         </div>
         <div className="flex gap-3 text-left flex-wrap ">
-          <label className="flex flex-col" htmlFor="calibar">
+          <label className="flex flex-col w-full lg:w-auto" htmlFor="calibar">
             <h1 className="font-semibold">Calibar</h1>
-            <div className="flex border gap-3 rounded p-2">
+            <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
               <input
-                className="focus:outline-0"
+                className="focus:outline-0 flex-grow min-w-0"
                 type="text"
                 name="calibar"
                 id="calibar"
               />
-              <span>inch</span>
+              <span className="whitespace-nowrap">inch</span>
             </div>
           </label>
-          <label className="flex flex-col" htmlFor="weight">
+          <label className="flex flex-col w-full lg:w-auto" htmlFor="weight">
             <h1 className="font-semibold">Weight</h1>
-            <div className="flex border gap-3 rounded p-2">
+            <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
               <input
-                className="focus:outline-0"
+                className="focus:outline-0 flex-grow min-w-0"
                 type="text"
-                name="weight"
-                id="weight"
+                name="calibar"
+                id="calibar"
               />
-              <span>gm</span>
+              <span className="whitespace-nowrap">gm</span>
             </div>
           </label>
-          <label className="flex flex-col" htmlFor="length">
+          <label className="flex flex-col w-full lg:w-auto" htmlFor="length">
             <h1 className="font-semibold">Length</h1>
-            <div className="flex border gap-3 rounded p-2">
+            <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
               <input
-                className="focus:outline-0"
+                className="focus:outline-0 flex-grow min-w-0"
                 type="text"
-                name="length"
-                id="length"
+                name="calibar"
+                id="calibar"
               />
-              <span>inch</span>
+              <span className="whitespace-nowrap">inch</span>
             </div>
           </label>
-          <label className="flex flex-col" htmlFor="velocity">
+          <label className="flex flex-col w-full lg:w-auto" htmlFor="velocity">
             <h1 className="font-semibold">Muzzle Velocity</h1>
-            <div className="flex border gap-3 rounded p-2">
+            <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
               <input
-                className="focus:outline-0"
+                className="focus:outline-0 flex-grow min-w-0"
                 type="text"
-                name="velocity"
-                id="velocity"
+                name="calibar"
+                id="calibar"
               />
-              <span>fps</span>
+              <span className="whitespace-nowrap">fps</span>
             </div>
           </label>
-          <label className="flex flex-col 2xl:mx-auto text-center" htmlFor="coefficient">
+          <label
+            className="flex flex-col 2xl:mx-auto text-center"
+            htmlFor="coefficient"
+          >
             <h1 className="font-semibold">Ballistic Coefficient</h1>
-            <div className="flex border gap-3 rounded p-2">
+            <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
               <input
-                className="focus:outline-0"
+                className="focus:outline-0 flex-grow min-w-0"
                 type="text"
-                name="velocity"
-                id="velocity"
+                name="calibar"
+                id="calibar"
               />
+              <span className="whitespace-nowrap">inch</span>
             </div>
           </label>
         </div>
@@ -127,53 +131,53 @@ const BallisticCalculator = ({design}) => {
             </select>
           </div>
           <div className="flex gap-3 flex-wrap text-left">
-            <label className="flex flex-col" htmlFor="calibar">
+            <label className="flex flex-col w-full lg:w-auto" htmlFor="calibar">
               <h1 className="font-semibold">Barrel Length</h1>
-              <div className="flex border gap-3 rounded p-2">
-                <input
-                  className="focus:outline-0"
-                  type="text"
-                  name="calibar"
-                  id="calibar"
-                />
-                <span>inch</span>
-              </div>
+              <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
+              <input
+                className="focus:outline-0 flex-grow min-w-0"
+                type="text"
+                name="calibar"
+                id="calibar"
+              />
+              <span className="whitespace-nowrap">inch</span>
+            </div>
             </label>
-            <label className="flex flex-col" htmlFor="weight">
+            <label className="flex flex-col w-full lg:w-auto" htmlFor="weight">
               <h1 className="font-semibold">Sight Height</h1>
-              <div className="flex border gap-3 rounded p-2">
-                <input
-                  className="focus:outline-0"
-                  type="text"
-                  name="weight"
-                  id="weight"
-                />
-                <span>inch</span>
-              </div>
+              <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
+              <input
+                className="focus:outline-0 flex-grow min-w-0"
+                type="text"
+                name="calibar"
+                id="calibar"
+              />
+              <span className="whitespace-nowrap">inch</span>
+            </div>
             </label>
-            <label className="flex flex-col" htmlFor="length">
+            <label className="flex flex-col w-full lg:w-auto" htmlFor="length">
               <h1 className="font-semibold">Twist Rate</h1>
-              <div className="flex border gap-3 rounded p-2">
-                <input
-                  className="focus:outline-0"
-                  type="text"
-                  name="length"
-                  id="length"
-                />
-                <span>yd</span>
-              </div>
+              <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
+              <input
+                className="focus:outline-0 flex-grow min-w-0"
+                type="text"
+                name="calibar"
+                id="calibar"
+              />
+              <span className="whitespace-nowrap">yd</span>
+            </div>
             </label>
-            <label className="flex flex-col" htmlFor="velocity">
+            <label className="flex flex-col w-full lg:w-auto" htmlFor="velocity">
               <h1 className="font-semibold">Zero Range</h1>
-              <div className="flex border gap-3 rounded p-2">
-                <input
-                  className="focus:outline-0"
-                  type="text"
-                  name="velocity"
-                  id="velocity"
-                />
-                <span>inch</span>
-              </div>
+              <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
+              <input
+                className="focus:outline-0 flex-grow min-w-0"
+                type="text"
+                name="calibar"
+                id="calibar"
+              />
+              <span className="whitespace-nowrap">inch</span>
+            </div>
             </label>
           </div>
         </div>
@@ -186,70 +190,73 @@ const BallisticCalculator = ({design}) => {
           />
         </div>
         <div className="flex gap-3 text-left flex-wrap">
-          <label className="flex flex-col" htmlFor="calibar">
+          <label className="flex flex-col w-full lg:w-auto" htmlFor="calibar">
             <h1 className="font-semibold">Tempurature</h1>
-            <div className="flex border gap-3 rounded p-2">
+            <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
               <input
-                className="focus:outline-0"
+                className="focus:outline-0 flex-grow min-w-0"
                 type="text"
                 name="calibar"
                 id="calibar"
               />
-              <span><sup>0</sup>C</span>
+              <span className="whitespace-nowrap"><sup>0</sup>C</span>
             </div>
           </label>
-          <label className="flex flex-col" htmlFor="weight">
+          <label className="flex flex-col w-full lg:w-auto" htmlFor="weight">
             <h1 className="font-semibold">Altitute</h1>
-            <div className="flex border gap-3 rounded p-2">
+            <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
               <input
-                className="focus:outline-0"
+                className="focus:outline-0 flex-grow min-w-0"
                 type="text"
-                name="weight"
-                id="weight"
+                name="calibar"
+                id="calibar"
               />
-              <span>km</span>
+              <span className="whitespace-nowrap">km</span>
             </div>
           </label>
-          <label className="flex flex-col" htmlFor="length">
+          <label className="flex flex-col w-full lg:w-auto" htmlFor="length">
             <h1 className="font-semibold">Humidity</h1>
-            <div className="flex border gap-3 rounded p-2">
+            <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
               <input
-                className="focus:outline-0"
+                className="focus:outline-0 flex-grow min-w-0"
                 type="text"
-                name="length"
-                id="length"
+                name="calibar"
+                id="calibar"
               />
-              <span>%</span>
+              <span className="whitespace-nowrap">%</span>
             </div>
           </label>
-          <label className="flex flex-col" htmlFor="velocity">
+          <label className="flex flex-col w-full lg:w-auto" htmlFor="velocity">
             <h1 className="font-semibold">Pressure</h1>
-            <div className="flex border gap-3 rounded p-2">
+            <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
               <input
-                className="focus:outline-0"
+                className="focus:outline-0 flex-grow min-w-0"
                 type="text"
-                name="velocity"
-                id="velocity"
+                name="calibar"
+                id="calibar"
               />
-              <span>pa</span>
+              <span className="whitespace-nowrap">Pa</span>
             </div>
           </label>
-          <label className="flex flex-col text-center 2xl:mx-auto" htmlFor="coefficient">
+          <label
+            className="flex flex-col w-full lg:w-auto text-center 2xl:mx-auto"
+            htmlFor="coefficient"
+          >
             <h1 className="font-semibold">Wind Speed</h1>
-            <div className="flex border gap-3 rounded p-2">
+            <div className="flex border gap-3 rounded p-2 w-full lg:w-80 items-center">
               <input
-                className="focus:outline-0"
+                className="focus:outline-0 flex-grow min-w-0"
                 type="text"
-                name="velocity"
-                id="velocity"
+                name="calibar"
+                id="calibar"
               />
-              <span>km/h</span>
+              <span className="whitespace-nowrap">Km/h</span>
             </div>
           </label>
         </div>
         <div className="flex justify-between">
-          <Calculate design="w-2xs py-2" />
-          <button className="btn btn-outline btn-[#3d8c40] w-2xs py-2">
+          <Calculate design="lg:w-2xs py-2" />
+          <button className="btn btn-outline btn-[#3d8c40] lg:w-2xs py-2">
             Save Info
           </button>
         </div>

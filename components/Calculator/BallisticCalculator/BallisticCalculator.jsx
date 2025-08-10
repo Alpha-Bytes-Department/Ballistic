@@ -85,7 +85,7 @@ const BallisticCalculator = ({ design }) => {
             </div>
           </label>
           <label
-            className="flex flex-col 2xl:mx-auto text-center"
+            className="flex flex-col 2xl:mx-auto 2xl:text-center"
             htmlFor="coefficient"
           >
             <h1 className="font-semibold">Ballistic Coefficient</h1>
@@ -239,7 +239,7 @@ const BallisticCalculator = ({ design }) => {
             </div>
           </label>
           <label
-            className="flex flex-col w-full lg:w-auto text-center 2xl:mx-auto"
+            className="flex flex-col w-full lg:w-auto 2xl:text-center 2xl:mx-auto"
             htmlFor="coefficient"
           >
             <h1 className="font-semibold">Wind Speed</h1>

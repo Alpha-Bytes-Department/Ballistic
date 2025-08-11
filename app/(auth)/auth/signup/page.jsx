@@ -65,6 +65,7 @@ const Signup = () => {
             <div className="flex border gap-3 rounded p-2 items-center">
               <PhoneInput
                country={'us'}
+               inputStyle={{width: "100%",border:"none", backgroundColor: "transparent"}}
                 inputProps={{
                   name: "phone",
                   required: true,

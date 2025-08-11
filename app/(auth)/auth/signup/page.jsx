@@ -5,7 +5,7 @@ import { FaArrowCircleRight } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 
-const Login = () => {
+const Signup = () => {
   return (
     <div className="flex justify-center items-center gap-5 flex-wrap h-full">
       <div className="bg-[#dae9db] rounded p-2">
@@ -54,4 +54,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

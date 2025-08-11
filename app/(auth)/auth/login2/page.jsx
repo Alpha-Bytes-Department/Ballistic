@@ -5,7 +5,7 @@ import { FaArrowCircleRight } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 
-const Login = () => {
+const Login2 = () => {
   return (
     <div className="flex justify-center items-center gap-5 flex-wrap h-full">
       <div className="bg-[#dae9db] rounded p-2">
@@ -23,11 +23,11 @@ const Login = () => {
         </div>
         <div>
           <label className="flex flex-col" htmlFor="email">
-            <h1 className="font-semibold">Email Address</h1>
+            <h1 className="font-semibold">Password</h1>
             <div className="flex border gap-3 rounded p-2 items-center">
               <input
                 className="focus:outline-0 flex-grow min-w-0"
-                type="text"
+                type="password"
                 name="calibar"
                 id="calibar"
                 placeholder="abcd12@gmail.com"
@@ -35,12 +35,12 @@ const Login = () => {
             </div>
           </label>
           <div className="flex my-2">
-            <Link
-              href="/auth/login2"
+            <button
+              
               className="flex gap-2 bg-[#3d8c40] text-white p-3 rounded items-center justify-center ms-auto"
             >
-              Next <FaArrowCircleRight />
-            </Link>
+              login <FaArrowCircleRight />
+            </button>
           </div>
         </div>
         <h1 className="text-center">Or</h1>
@@ -54,4 +54,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Login2;

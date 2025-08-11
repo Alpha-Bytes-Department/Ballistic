@@ -15,13 +15,37 @@ const Signup = () => {
         <div>
           <h1 className="text-2xl font-bold">Login</h1>
           <h3>
-            New User?{" "}
+            Old User?{" "}
             <Link href="/auth/signup" className="text-[#63a065]">
-              Create an account
+              Login
             </Link>
           </h3>
         </div>
-        <div>
+        <div className="flex flex-col gap-5">
+          <div className="flex gap-5">
+            <label className="flex flex-col" htmlFor="email">
+              <h1 className="font-semibold">Frist Name</h1>
+              <div className="flex border gap-3 rounded p-2 items-center">
+                <input
+                  className="focus:outline-0 flex-grow min-w-0"
+                  type="text"
+                  name="calibar"
+                  id="calibar"
+                />
+              </div>
+            </label>
+            <label className="flex flex-col" htmlFor="email">
+              <h1 className="font-semibold">Last name</h1>
+              <div className="flex border gap-3 rounded p-2 items-center">
+                <input
+                  className="focus:outline-0 flex-grow min-w-0"
+                  type="text"
+                  name="calibar"
+                  id="calibar"
+                />
+              </div>
+            </label>
+          </div>
           <label className="flex flex-col" htmlFor="email">
             <h1 className="font-semibold">Email Address</h1>
             <div className="flex border gap-3 rounded p-2 items-center">
@@ -30,7 +54,28 @@ const Signup = () => {
                 type="text"
                 name="calibar"
                 id="calibar"
-                placeholder="abcd12@gmail.com"
+              />
+            </div>
+          </label>
+          <label className="flex flex-col" htmlFor="email">
+            <h1 className="font-semibold">Phone</h1>
+            <div className="flex border gap-3 rounded p-2 items-center">
+              <input
+                className="focus:outline-0 flex-grow min-w-0"
+                type="text"
+                name="calibar"
+                id="calibar"
+              />
+            </div>
+          </label>
+          <label className="flex flex-col" htmlFor="email">
+            <h1 className="font-semibold">Password</h1>
+            <div className="flex border gap-3 rounded p-2 items-center">
+              <input
+                className="focus:outline-0 flex-grow min-w-0"
+                type="text"
+                name="calibar"
+                id="calibar"
               />
             </div>
           </label>
@@ -39,16 +84,21 @@ const Signup = () => {
               href="/auth/login2"
               className="flex gap-2 bg-[#3d8c40] text-white p-3 rounded items-center justify-center ms-auto"
             >
-              Next <FaArrowCircleRight />
+              Signin <FaArrowCircleRight />
             </Link>
           </div>
         </div>
         <h1 className="text-center">Or</h1>
         <div className="flex flex-col gap-3">
-            <button className="p-3 border rounded-4xl cursor-pointer"><FcGoogle className="inline text-xl"/>Continue with Google</button>
-            <button className="p-3 border rounded-4xl cursor-pointer"><FaApple className="inline text-xl"/>Continue with Apple</button>
+          <button className="p-3 border rounded-4xl cursor-pointer">
+            <FcGoogle className="inline text-xl" />
+            Continue with Google
+          </button>
+          <button className="p-3 border rounded-4xl cursor-pointer">
+            <FaApple className="inline text-xl" />
+            Continue with Apple
+          </button>
         </div>
-        <p className="text-[#63a065] mt-10">Get help signing in</p>
       </div>
     </div>
   );

@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const Signup = () => {
   return (
@@ -60,12 +63,20 @@ const Signup = () => {
           <label className="flex flex-col" htmlFor="email">
             <h1 className="font-semibold">Phone</h1>
             <div className="flex border gap-3 rounded p-2 items-center">
-              <input
+              <PhoneInput
+               country={'us'}
+                inputProps={{
+                  name: "phone",
+                  required: true,
+                  autoFocus: true,
+                }}
+              />
+              {/* <input
                 className="focus:outline-0 flex-grow min-w-0"
                 type="text"
                 name="calibar"
                 id="calibar"
-              />
+              /> */}
             </div>
           </label>
           <label className="flex flex-col" htmlFor="email">
@@ -84,7 +95,7 @@ const Signup = () => {
               href="/auth/login2"
               className="flex gap-2 bg-[#3d8c40] text-white p-3 rounded items-center justify-center ms-auto"
             >
-              Signin <FaArrowCircleRight />
+              Sign in <FaArrowCircleRight />
             </Link>
           </div>
         </div>

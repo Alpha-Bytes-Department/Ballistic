@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
@@ -14,7 +15,7 @@ const Signup = () => {
       <div className="bg-[#dae9db] rounded p-2">
         <Image src="/logo/logo.png" alt="logo" width={246} height={99} />
       </div>
-      <div className="bg-[#dae9db] p-8 rounded flex flex-col gap-10">
+      <div className="bg-[#dae9db] p-8 rounded flex flex-col gap-5">
         <div>
           <h1 className="text-2xl font-bold">Login</h1>
           <h3>
@@ -24,11 +25,11 @@ const Signup = () => {
             </Link>
           </h3>
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-3">
           <div className="flex gap-5">
             <label className="flex flex-col" htmlFor="email">
-              <h1 className="font-semibold">Frist Name</h1>
-              <div className="flex border gap-3 rounded p-2 items-center">
+              <h1>Frist Name</h1>
+              <div className="flex border gap-2 rounded p-2 items-center">
                 <input
                   className="focus:outline-0 flex-grow min-w-0"
                   type="text"
@@ -38,8 +39,8 @@ const Signup = () => {
               </div>
             </label>
             <label className="flex flex-col" htmlFor="email">
-              <h1 className="font-semibold">Last name</h1>
-              <div className="flex border gap-3 rounded p-2 items-center">
+              <h1>Last name</h1>
+              <div className="flex border gap-2 rounded p-2 items-center">
                 <input
                   className="focus:outline-0 flex-grow min-w-0"
                   type="text"
@@ -50,8 +51,8 @@ const Signup = () => {
             </label>
           </div>
           <label className="flex flex-col" htmlFor="email">
-            <h1 className="font-semibold">Email Address</h1>
-            <div className="flex border gap-3 rounded p-2 items-center">
+            <h1>Email Address</h1>
+            <div className="flex border gap-2 rounded p-2 items-center">
               <input
                 className="focus:outline-0 flex-grow min-w-0"
                 type="text"
@@ -61,8 +62,8 @@ const Signup = () => {
             </div>
           </label>
           <label className="flex flex-col" htmlFor="email">
-            <h1 className="font-semibold">Phone</h1>
-            <div className="flex border gap-3 rounded p-2 items-center">
+            <h1>Phone</h1>
+            <div className="flex border gap-2 rounded p-2 items-center">
               <PhoneInput
                country={'us'}
                inputStyle={{width: "100%",border:"none", backgroundColor: "transparent"}}
@@ -72,17 +73,14 @@ const Signup = () => {
                   autoFocus: true,
                 }}
               />
-              {/* <input
-                className="focus:outline-0 flex-grow min-w-0"
-                type="text"
-                name="calibar"
-                id="calibar"
-              /> */}
             </div>
           </label>
           <label className="flex flex-col" htmlFor="email">
-            <h1 className="font-semibold">Password</h1>
-            <div className="flex border gap-3 rounded p-2 items-center">
+            <div className="flex justify-between">
+              <h1>Password</h1>
+              <p><FaEyeSlash className="inline"/> hide</p>
+            </div>
+            <div className="flex border gap-2 rounded p-2 items-center">
               <input
                 className="focus:outline-0 flex-grow min-w-0"
                 type="text"

@@ -4,13 +4,14 @@ import Login from "@/components/shared/Buttons/Login";
 import Signup from "@/components/shared/Buttons/Signup";
 import Image from "next/image";
 import Features from "@/components/Features/Features";
+import BannerUpdate from "@/components/LandingPage/BannerUpdate";
 
 export default function Home() {
 
   
   return (
     <div>
-      <Banner/>
+      <BannerUpdate/>
       <div className="flex flex-col-reverse xl:flex-row gap-20 my-10">
         <BallisticCalculator design="w-full xl:w-9/12"/>
         <div className="flex flex-col gap-5 w-full xl:w-3/12">

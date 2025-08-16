@@ -37,7 +37,7 @@ const Features = ({design = ""}) => {
               className="object-cover rounded-lg"
             />
           </div>
-          <div className="h-20 w-20 -mt-10 rounded-full bg-[#3d8c40] border-8 border-white text-white flex justify-center items-center text-xl font-bold z-10">
+          <div className="h-20 w-20 -mt-10 rounded-full bg-[#2C2C2C] border-8 border-white text-white flex justify-center items-center text-xl font-bold z-10">
             <span>1.</span>
           </div>
           <div className="text-center px-2">
@@ -60,7 +60,7 @@ const Features = ({design = ""}) => {
               className="object-cover rounded-lg"
             />
           </div>
-          <div className="h-20 w-20 -mt-10 rounded-full bg-[#3d8c40] border-8 border-white text-white flex justify-center items-center text-xl font-bold z-10">
+          <div className="h-20 w-20 -mt-10 rounded-full bg-[#2C2C2C] border-8 border-white text-white flex justify-center items-center text-xl font-bold z-10">
             <span>2.</span>
           </div>
           <div className="text-center px-2">
@@ -81,7 +81,7 @@ const Features = ({design = ""}) => {
               className="object-cover rounded-lg"
             />
           </div>
-          <div className="h-20 w-20 -mt-10 rounded-full bg-[#3d8c40] border-8 border-white text-white flex justify-center items-center text-xl font-bold z-10">
+          <div className="h-20 w-20 -mt-10 rounded-full bg-[#2C2C2C] border-8 border-white text-white flex justify-center items-center text-xl font-bold z-10">
             <span>3.</span>
           </div>
           <div className="text-center px-2">

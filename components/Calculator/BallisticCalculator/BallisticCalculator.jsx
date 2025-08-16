@@ -10,7 +10,7 @@ const BallisticCalculator = ({ design }) => {
         save unlimited custom profiles for future use.
       </p>
       <form action="submit" className="flex flex-col gap-5 text-center">
-        <div className="text-xl bg-[#e4f3e5] py-3">Units of Measure</div>
+        <div className="text-xl text-white bg-[#1E1E1E] py-3">Units of Measure</div>
         <select name="" id="" className="p-3 border rounded">
           <option value="" disabled>
             Please Select
@@ -20,7 +20,7 @@ const BallisticCalculator = ({ design }) => {
           <option value="">Select 4</option>
           <option value="">Select 5</option>
         </select>
-        <div className="text-xl bg-[#e4f3e5] py-3">Ammunition Inputs</div>
+        <div className="text-xl text-white bg-[#1E1E1E] py-3">Ammunition Inputs</div>
         <div className="flex flex-col">
           <label htmlFor="load" className="text-left font-semibold">
             Load type
@@ -114,7 +114,7 @@ const BallisticCalculator = ({ design }) => {
             <option value="">Select 5</option>
           </select>
         </div>
-        <div className="text-xl bg-[#e4f3e5] py-3">Gun Inputs</div>
+        <div className="text-xl text-white bg-[#1E1E1E] py-3">Gun Inputs</div>
         <div className="flex flex-col gap-5 ">
           <div className="flex flex-col">
             <label htmlFor="load" className="text-left font-semibold">
@@ -181,12 +181,12 @@ const BallisticCalculator = ({ design }) => {
             </label>
           </div>
         </div>
-        <div className="text-xl bg-[#e4f3e5] py-3 flex justify-between items-center px-5">
+        <div className="text-xl text-white bg-[#1E1E1E] py-3 flex justify-between items-center px-5">
           <span></span> <span>Environmental Status</span>{" "}
           <input
             type="checkbox"
             defaultChecked
-            className="toggle toggle-[#3d8c40] checked:border-[#3d8c40] checked:bg-[#3d8c40] checked:text-white"
+            className="toggle toggle-[#2C2C2C] checked:border-[#2C2C2C] checked:bg-[#2C2C2C] checked:text-white"
           />
         </div>
         <div className="flex gap-3 text-left flex-wrap">
@@ -256,7 +256,7 @@ const BallisticCalculator = ({ design }) => {
         </div>
         <div className="flex justify-between">
           <Calculate design="lg:w-2xs py-2" />
-          <button className="btn btn-outline btn-[#3d8c40] lg:w-2xs py-2">
+          <button className="btn btn-outline btn-[#2C2C2C] lg:w-2xs py-2">
             Save Info
           </button>
         </div>

@@ -37,7 +37,7 @@ const Login2 = () => {
           <div className="flex my-2">
             <button
               
-              className="flex gap-2 bg-[#3d8c40] text-white p-3 rounded items-center justify-center ms-auto"
+              className="flex gap-2 bg-[#2C2C2C] text-white p-3 rounded items-center justify-center ms-auto"
             >
               login <FaArrowCircleRight />
             </button>

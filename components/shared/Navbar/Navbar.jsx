@@ -53,7 +53,6 @@ const Navbar = () => {
           <Login design="text-sm lg:text-base"/>
         </div>
       </div>
-      <SecondNav />
     </nav>
   );
 };

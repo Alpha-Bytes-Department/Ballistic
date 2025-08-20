@@ -22,14 +22,14 @@ const Banner = () => {
               src="/images/Bullet.png"
             />
             <div className="absolute inset-0 bg-black/15 z-0"></div>
-            <div className="ms-10 space-y-5">
+            <div className="ms-10 space-y-5 relative z-10">
               <h2 className="text-xl lg:text-5xl">Real-Time Accuracy</h2>
               <p className="text-sm lg:text-base">
                 Get accurate drop charts based on your weapon, ammo, and current
                 environment — right in your browser.
               </p>
             </div>
-            <div className="mt-9">
+            <div className="mt-9 relative z-10">
               <LounchCalculator />
             </div>
           </div>

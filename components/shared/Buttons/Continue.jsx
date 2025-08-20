@@ -1,7 +1,8 @@
+import Link from "next/link";
 import React from "react";
 
 const Continue = ({design = ""}) => {
-  return <button className={`btn bg-[#2C2C2C] text-white ${design}`}>Continue</button>;
+  return <Link href={"/contact-us"} className={`btn bg-white text-black ${design}`}>Continue</Link>
 };
 
 export default Continue;

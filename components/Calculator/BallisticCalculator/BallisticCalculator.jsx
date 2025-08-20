@@ -5,7 +5,7 @@ const BallisticCalculator = ({ design }) => {
   return (
     <div className={`${design}`}>
       <h1 className="text-2xl font-klear-bold">BALLISTIC CALCULATOR</h1>
-      <p>
+      <p className="text-[#666666] text-[20px] my-2 leading-7">
         Easily calculate bullet trajectories for any rifle or handgun load — and
         save unlimited custom profiles for future use.
       </p>

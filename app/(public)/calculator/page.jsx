@@ -4,7 +4,7 @@ import React from 'react';
 const Calculator = () => {
     return (
         <div>
-            <BallisticCalculator design="my-10"/>
+            <BallisticCalculator design="mb-10 mt-36"/>
         </div>
     );
 };

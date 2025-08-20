@@ -2,29 +2,15 @@ import React from 'react';
 import { CiLocationOn } from "react-icons/ci";
 import { MdWifiCalling3 } from "react-icons/md";
 import { IoMailOutline } from "react-icons/io5";
-import { IoArrowForwardCircleOutline } from "react-icons/io5";
+import ContactUsForm from '@/components/ContactUs/ContactUsForm';
 
 
 const contactUs = () => {
     return (
-        <div className='flex flex-wrap justify-around gap-10 items-center my-24 mx-auto'>
+        <div className='flex flex-wrap justify-around gap-10 items-center my-36 mx-auto'>
             <div>
                 <h1 className='text-7xl'>Contact Us</h1>
-                <form action="submin" className='flex flex-col gap-3'>
-                    <label htmlFor="name">Name</label>
-                    <div>
-                        <input className='border border-gray-300 focus:outline-0 p-3 rounded w-full' type="text" name="name" id="name" />
-                    </div>
-                    <label htmlFor="email">Email Address</label>
-                    <div>
-                        <input className='border border-gray-300 focus:outline-0 p-3 rounded w-full' type="text" name="email" id="email" />
-                    </div>
-                    <label htmlFor="message">Message</label>
-                    <div>
-                        <textarea className='border border-gray-300 focus:outline-0 p-3 rounded w-full' name="message" id="message"/>
-                    </div>
-                    <div><button type='submit' className={`btn bg-[#2C2C2C] text-white`}>Send <IoArrowForwardCircleOutline className='text-xl'/></button></div>
-                </form>
+                <ContactUsForm/>
             </div>
             <div className='flex flex-col gap-5'>
                 <h1 className='text-3xl'>Let's talk with us</h1>

@@ -2,7 +2,8 @@ import "../globals.css";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
 import ManageShowGetReady from "@/utilities/ManageShowGetReady";
-import ManageShowBanner from "@/components/LandingPage/ManageShowBanner";
+import ManageShowBanner from "@/utilities/ManageShowBanner";
+import ManageNav from "@/utilities/ManageNav";
 
 export const metadata = {
   title: "Klear",
@@ -13,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <ManageNav/>
         <ManageShowBanner />
         <main className="bodyCantainer mx-auto">{children}</main>
         <ManageShowGetReady />

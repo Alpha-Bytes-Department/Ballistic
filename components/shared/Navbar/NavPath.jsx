@@ -41,7 +41,7 @@ const NavPath = () => {
           <Link
             className={
               pathname === data.path
-                ? `border-b-2 border-b-[#2C2C2C]`
+                ? `border-b-2 border-b-white`
                 : ""
             }
             href={data?.path}

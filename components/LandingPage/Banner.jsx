@@ -9,7 +9,7 @@ const Banner = () => {
         <div>
           <h1 className="text-xl lg:text-5xl">
             Precision{" "}
-            <span className="text-red-500 tracking-tight font-klear-bold">
+            <span className="text-green-500 tracking-tight font-klear-bold">
               Ballistics
             </span>
           </h1>

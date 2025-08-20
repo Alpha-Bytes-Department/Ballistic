@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-[#1E1E1E] text-white">
       <div className="footer sm:footer-horizontal p-10">
         <nav className="space-y-3">
-          <Image width={200} height={50} alt="logo" src='/logo/logo.png'/>
+          <Image width={200} height={50} alt="logo" src='/logo/WhiteLogoWithDot.png'/>
           <div className="max-w-80">
             The purpose of a FAQ is generally to provide information on frequent questions or concerns.
           </div>

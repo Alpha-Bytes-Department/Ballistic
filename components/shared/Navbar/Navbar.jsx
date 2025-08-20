@@ -1,17 +1,32 @@
+"use client"
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import NavPath from "./NavPath";
-import SecondNav from "./SecondNav";
 import Login from "../Buttons/Login";
 import TryCalculator from "../Buttons/TryCalculator";
 
 const Navbar = () => {
+  const [isSticky, setIsSticky] = useState(false);
 
-    
+  //scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []); 
 
   return (
-    <nav className="flex flex-col gap-5 lg:gap-10">
+    <nav className={`flex flex-col gap-5 lg:gap-10 fixed top-0 w-full z-50 transition-colors duration-300 text-white ${
+        isSticky ? "bg-black/90 backdrop-blur-md " : "bg-transparent"
+      }`}>
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
@@ -34,13 +49,14 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black"
             >
               <NavPath/>
             </ul>
           </div>
-          <Link href="/" className=" hidden lg:block">
-            <Image alt="logo" width={200} height={50} src="/logo/logo.png" />
+          <Link href="/" className=" hidden lg:block relative">
+            <Image alt="logo" width={200} height={50} src="/logo/WhiteLogoWithDot.png" />
+            {/* <Image alt="dot" width={180} height={33} src={"/logo/dots.png"} className="absolute top-16 left-3"/> */}
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

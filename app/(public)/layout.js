@@ -2,16 +2,7 @@ import "../globals.css";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
 import ManageShowGetReady from "@/utilities/ManageShowGetReady";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+import ManageShowBanner from "@/components/LandingPage/ManageShowBanner";
 
 export const metadata = {
   title: "Klear",
@@ -21,12 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="">
-        <div className="bodyCantainer mx-auto">
-          <Navbar/>
-          {children}
-        </div>
-        <ManageShowGetReady/>
+      <body>
+        <Navbar />
+        <ManageShowBanner />
+        <main className="bodyCantainer mx-auto">{children}</main>
+        <ManageShowGetReady />
         <Footer />
       </body>
     </html>

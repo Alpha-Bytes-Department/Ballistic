@@ -10,7 +10,7 @@ const BallisticCalculator = ({ design }) => {
         save unlimited custom profiles for future use.
       </p>
       <form action="submit" className="flex flex-col gap-5 text-center">
-        <div className="text-xl text-white bg-[#1E1E1E] py-3">Units of Measure</div>
+        <div className="text-xl text-white bg-[#5c5c5b] py-3">Units of Measure</div>
         <select name="" id="" className="p-3 border rounded">
           <option value="" disabled>
             Please Select
@@ -20,7 +20,7 @@ const BallisticCalculator = ({ design }) => {
           <option value="">Select 4</option>
           <option value="">Select 5</option>
         </select>
-        <div className="text-xl text-white bg-[#1E1E1E] py-3">Ammunition Inputs</div>
+        <div className="text-xl text-white bg-[#5c5c5b] py-3">Ammunition Inputs</div>
         <div className="flex flex-col">
           <label htmlFor="load" className="text-left font-semibold">
             Load type
@@ -114,7 +114,7 @@ const BallisticCalculator = ({ design }) => {
             <option value="">Select 5</option>
           </select>
         </div>
-        <div className="text-xl text-white bg-[#1E1E1E] py-3">Gun Inputs</div>
+        <div className="text-xl text-white bg-[#5c5c5b] py-3">Gun Inputs</div>
         <div className="flex flex-col gap-5 ">
           <div className="flex flex-col">
             <label htmlFor="load" className="text-left font-semibold">
@@ -181,7 +181,7 @@ const BallisticCalculator = ({ design }) => {
             </label>
           </div>
         </div>
-        <div className="text-xl text-white bg-[#1E1E1E] py-3 flex justify-between items-center px-5">
+        <div className="text-xl text-white bg-[#5c5c5b] py-3 flex justify-between items-center px-5">
           <span></span> <span>Environmental Status</span>{" "}
           <input
             type="checkbox"

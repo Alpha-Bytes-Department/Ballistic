@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <ManageNav/>
         <ManageShowBanner />
-        <main className="bodyCantainer mx-auto">{children}</main>
+        <main className="bodyCantainer mx-5 lg:mx-auto">{children}</main>
         <ManageShowGetReady />
         <Footer />
       </body>

@@ -26,7 +26,7 @@ const Navbar = ( {design}) => {
 
   return (
     <nav
-      className={`flex flex-col gap-5 lg:gap-10 px-8 fixed top-0 pt-2 w-full z-50 transition-colors duration-300 ${color} ${
+      className={`flex flex-col gap-5 lg:gap-10 lg:px-8 fixed top-0 pt-2 w-full z-50 transition-colors duration-300 ${color} ${
         isSticky ? "bg-black/90 backdrop-blur-md text-white" : "bg-transparent"
       }`}
     >

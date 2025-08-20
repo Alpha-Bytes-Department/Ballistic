@@ -4,7 +4,7 @@ import LounchCalculator from "../shared/Buttons/LounchCalculator";
 
 const Banner = () => {
   return (
-    <div className="bg-[url('/images/banner.jpg')] w-full bg-no-repeat bg-cover bg-center h-[85vh]">
+    <div className="bg-[url('/images/banner.jpg')] w-full bg-no-repeat bg-cover bg-center h-[85vh] shadow-[0_0_10px_100px_#00000040_inset]">
       <div className="space-y-5 text-white flex items-center h-full mx-10">
         <div>
           <h1 className="text-xl lg:text-5xl">

@@ -21,6 +21,7 @@ const Banner = () => {
               className="-rotate-90 absolute -left-12 top-10"
               src="/images/Bullet.png"
             />
+            <div className="absolute inset-0 bg-black/15 z-0"></div>
             <div className="ms-10 space-y-5">
               <h2 className="text-xl lg:text-5xl">Real-Time Accuracy</h2>
               <p className="text-sm lg:text-base">

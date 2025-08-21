@@ -3,7 +3,7 @@ import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
 const ContactUsForm = () => {
   return (
-    <form action="submin" className="flex flex-col gap-3">
+    <form action="submin" className="flex flex-col gap-1 md:gap-3">
       <label htmlFor="name">Name</label>
       <div>
         <input

@@ -5,7 +5,7 @@ import React from 'react';
 const page = () => {
     return (
         <div>
-            <Features design='mt-32'/>
+            <Features design='mt-20 lg:mt-32'/>
         </div>
     );
 };

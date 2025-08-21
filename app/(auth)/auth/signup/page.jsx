@@ -53,7 +53,7 @@ const Signup = () => {
             </Link>
           </h3>
         </div>
-        <div className="flex flex-col gap-3">
+        <form className="flex flex-col gap-3">
           <div className="flex gap-5">
             <label className="flex flex-col" htmlFor="email">
               <h1>Frist Name</h1>
@@ -105,6 +105,26 @@ const Signup = () => {
               />
             </div>
           </label>
+          <label className="flex gap-2" htmlFor="remember">
+            <input
+              className="h-4 w-4 accent-black rounded"
+              type="checkbox"
+              name="remember"
+              id="remember"
+            />
+            <span className="text-sm">Remember password</span>
+          </label>
+          <label className="flex gap-2" htmlFor="emailSendAcces">
+            <input
+              className="h-4 w-4 accent-black rounded"
+              type="checkbox"
+              name="emailSendAcces"
+              id="emailSendAcces"
+            />
+            <span className="text-sm">
+              By creating an account, I am also consenting to receive emails.
+            </span>
+          </label>
           <div className="flex my-2">
             <Link
               href="/auth/login2"
@@ -113,10 +133,13 @@ const Signup = () => {
               Sign in <FaArrowCircleRight />
             </Link>
           </div>
-        </div>
+        </form>
         <h1 className="text-center">Or</h1>
         <div className="flex gap-3 justify-center">
-          <Link href={"/"} className="p-3 px-5 border rounded-4xl cursor-pointer text-center">
+          <Link
+            href={"/"}
+            className="p-3 px-5 border rounded-4xl cursor-pointer text-center"
+          >
             Home
           </Link>
           <button className=" px-10 border rounded-4xl cursor-pointer">

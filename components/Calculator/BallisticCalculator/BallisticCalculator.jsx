@@ -85,7 +85,7 @@ const BallisticCalculator = ({ design }) => {
             </div>
           </label>
           <label
-            className="flex flex-col 2xl:mx-auto 2xl:text-center"
+            className="flex flex-col w-full lg:w-auto 2xl:mx-auto 2xl:text-center"
             htmlFor="coefficient"
           >
             <h1 className="font-semibold">Ballistic Coefficient</h1>
@@ -93,8 +93,8 @@ const BallisticCalculator = ({ design }) => {
               <input
                 className="focus:outline-0 flex-grow min-w-0"
                 type="text"
-                name="calibar"
-                id="calibar"
+                name="coefficient"
+                id="coefficient"
               />
               <span className="whitespace-nowrap">inch</span>
             </div>

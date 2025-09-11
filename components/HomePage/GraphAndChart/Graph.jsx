@@ -86,7 +86,8 @@ const data = {
 const Graph = () => {
   return (
     <div>
-      <Line width={400} height={400} data={data} options={options} />
+      <div className="text-xl text-white bg-[#5c5c5b] py-3 text-center rounded-xl">Graph</div>
+      <Line width={400} height={400} data={data} options={options} className="mt-5"/>
     </div>
   );
 };

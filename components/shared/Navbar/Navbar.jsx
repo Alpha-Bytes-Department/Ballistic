@@ -166,7 +166,7 @@ const Navbar = ( {design}) => {
           </ul>
         </div>
         <div className="navbar-end gap-3">
-          {user?<Avatar/>:<><TryCalculator design="text-sm lg:text-base" />
+          {user?<Link href={"/dashboard/profile"} className="cursor-pointer"><Avatar/></Link>:<><TryCalculator design="text-sm lg:text-base" />
           <Login design="text-sm lg:text-base" /></>}
         </div>
       </div>

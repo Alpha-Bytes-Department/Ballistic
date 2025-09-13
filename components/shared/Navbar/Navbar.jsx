@@ -5,9 +5,11 @@ import Image from "next/image";
 import NavPath from "./NavPath";
 import Login from "../Buttons/Login";
 import TryCalculator from "../Buttons/TryCalculator";
+import Avatar from "./Avatar";
 
 const Navbar = ( {design}) => {
   const [isSticky, setIsSticky] = useState(false);
+  const [user, setuser] = useState(true);
   const {color="text-white", fill="white"} = design || {}
 
   //scroll effect
@@ -164,8 +166,8 @@ const Navbar = ( {design}) => {
           </ul>
         </div>
         <div className="navbar-end gap-3">
-          <TryCalculator design="text-sm lg:text-base" />
-          <Login design="text-sm lg:text-base" />
+          {user?<Avatar/>:<><TryCalculator design="text-sm lg:text-base" />
+          <Login design="text-sm lg:text-base" /></>}
         </div>
       </div>
     </nav>

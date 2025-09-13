@@ -89,13 +89,22 @@
 }
 
 
-
-
 /* declar variable  */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+
+/* hide scroll bar  */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
 
 
 /* media query */
@@ -114,6 +123,8 @@ body {
   font-family: 'klear regular', Arial, Helvetica, sans-serif;
 }
 
+
+
 *p,
 *select {
   color: #666666
@@ -125,6 +136,8 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+
 
 
 

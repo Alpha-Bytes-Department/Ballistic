@@ -11,7 +11,7 @@ const page = () => {
         <BallisticCalculator design="w-full xl:w-9/12"/>
         <div className="flex flex-col gap-5 w-full xl:w-3/12">
             <Image alt="bullet" src="/images/Bullet.png" width={170} height={55} className="mx-auto"/>
-            <div className="mx-auto">
+            <div className="justify-items-center">
                 <Graph/>
             </div>
         </div>

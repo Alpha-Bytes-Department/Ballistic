@@ -1,9 +1,5 @@
-import "../globals.css";
-import Navbar from "@/components/shared/Navbar/Navbar";
-import Footer from "@/components/shared/Footer/Footer";
-import ManageShowGetReady from "@/utilities/ManageShowGetReady";
-import ManageShowBanner from "@/utilities/ManageShowBanner";
-import ManageNav from "@/utilities/ManageNav";
+import "../../globals.css";
+import DashboardNav from "@/components/Dashbord/DashboardNav/DashboardNav";
 
 export const metadata = {
   title: "Klear",
@@ -14,11 +10,10 @@ export default function DashboardLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ManageNav/>
-        <ManageShowBanner />
-        <main className="bodyCantainer mx-5 lg:mx-auto">{children}</main>
-        <ManageShowGetReady />
-        <Footer />
+        <div className="flex gap-5">
+          <DashboardNav />
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );

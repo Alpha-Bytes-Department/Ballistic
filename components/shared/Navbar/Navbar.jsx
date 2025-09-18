@@ -7,11 +7,13 @@ import Login from "../Buttons/Login";
 import TryCalculator from "../Buttons/TryCalculator";
 import Avatar from "./Avatar";
 import { CiLocationOn } from "react-icons/ci";
+import { AlertContainer, useAlert } from "@/hooks/useAlart";
 
 const Navbar = ({ design }) => {
   const [isSticky, setIsSticky] = useState(false);
   const [user, setuser] = useState(true);
   const { color = "text-white", fill = "white" } = design || {};
+  const {alerts, showAlert, hideAlert, clearAll, showSuccess, showError, showWarning, showInfo} = useAlert();
 
   //scroll effect
   useEffect(() => {
@@ -27,8 +29,7 @@ const Navbar = ({ design }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
-   // getting location access
+  // getting location access
   const handleLocationAccess = (event) => {
     event.preventDefault();
 
@@ -43,6 +44,8 @@ const Navbar = ({ design }) => {
       },
       (error) => {
         console.log("Geolocation errror", error);
+        showError("Can not find locaction");
+        
       },
       {
         enableHighAccuracy: true,
@@ -155,6 +158,7 @@ const Navbar = ({ design }) => {
           )}
         </div>
       </div>
+      <AlertContainer alerts={alerts} onDismiss={hideAlert}/>
     </nav>
   );
 };

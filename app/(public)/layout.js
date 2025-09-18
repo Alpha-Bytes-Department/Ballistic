@@ -4,6 +4,7 @@ import Footer from "@/components/shared/Footer/Footer";
 import ManageShowGetReady from "@/utilities/ManageShowGetReady";
 import ManageShowBanner from "@/utilities/ManageShowBanner";
 import ManageNav from "@/utilities/ManageNav";
+import { ModalProvider } from "@/providers/ModalProviders";
 
 export const metadata = {
   title: "Klear",
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ManageNav/>
+        <ManageNav />
         <ManageShowBanner />
         <main className="bodyCantainer mx-5 lg:mx-auto">{children}</main>
         <ManageShowGetReady />
